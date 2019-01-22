@@ -1,0 +1,28 @@
+﻿{
+  "ReRoutes": [
+    {
+      "DownstreamPathTemplate": "/{url}",
+      "DownstreamScheme": "http",
+      "UseServiceDiscovery": true,
+      "ReRouteIsCaseSensitive": false,
+      "UpstreamPathTemplate": "/{url}",
+      "UpstreamHttpMethod": [ "Get", "Post", "Put", "Delete" ],
+      "ServiceName": "Theme",
+      "LoadBalancerOptions": {
+        "Type": "RoundRobin"
+      }
+      //,
+      //"QoSOptions": {
+      //  "ExceptionsAllowedBeforeBreaking": 3,
+      //  "DurationOfBreak": 20,
+      //  "TimeoutValue": 5000
+      //}
+    }
+  ],
+  "GlobalConfiguration": {
+    "ServiceDiscoveryProvider": {
+      "Host": "127.0.0.1",
+      "Port": 8500
+    }
+  }
+}
