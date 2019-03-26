@@ -40,5 +40,22 @@ namespace Service.Controllers
         public void Delete(int id)
         {
         }
+        [HttpGet("{Login}")]
+        public void Login(Newtonsoft.Json.Linq.JObject obj)
+        {
+            try
+            {
+                string userName = "111";
+                string pwd = "11";
+                if (!string.IsNullOrWhiteSpace(userName) && !string.IsNullOrWhiteSpace(pwd))
+                {
+
+                }
+            }
+            catch (Exception)
+            {
+
+            }
+        }
     }
 }
