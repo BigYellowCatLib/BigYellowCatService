@@ -5,15 +5,19 @@ VisualStudioVersion = 15.0.27004.2002
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ApiGeteway", "src\ApiGeteway\ApiGeteway.csproj", "{BADC48AD-5E24-478A-89D1-6E5E304BAB1F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Service", "src\Service\Service.csproj", "{A608F478-73D5-4ADA-B305-F656840438DA}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Service", "src\Service\Service.csproj", "{A608F478-73D5-4ADA-B305-F656840438DA}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Domain", "src\Domain\Domain.csproj", "{F9D2BF2F-E9A5-4571-B64D-4CCC1441839D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Domain", "src\Domain\Domain.csproj", "{F9D2BF2F-E9A5-4571-B64D-4CCC1441839D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Core", "src\Core\Core.csproj", "{63069C51-367B-40B2-A231-A90AD350D6F6}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Core", "src\Core\Core.csproj", "{63069C51-367B-40B2-A231-A90AD350D6F6}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Business", "src\Business\Business.csproj", "{500B062C-B75D-440E-BEEE-E6988136813A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Business", "src\Business\Business.csproj", "{500B062C-B75D-440E-BEEE-E6988136813A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Contracts", "src\Contracts\Contracts.csproj", "{0FE01347-EDB4-4DB0-855A-7CD57ABFABCE}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Contracts", "src\Contracts\Contracts.csproj", "{0FE01347-EDB4-4DB0-855A-7CD57ABFABCE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IdentitySvc", "src\IdentitySvc\IdentitySvc.csproj", "{78D165B0-7FD2-46B7-BF9D-345B92664A22}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IdentityMvcClient", "src\IdentityMvcClient\IdentityMvcClient.csproj", "{F0EB1480-143C-47F2-A615-5E3808B71C8A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -45,6 +49,14 @@ Global
 		{0FE01347-EDB4-4DB0-855A-7CD57ABFABCE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0FE01347-EDB4-4DB0-855A-7CD57ABFABCE}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0FE01347-EDB4-4DB0-855A-7CD57ABFABCE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{78D165B0-7FD2-46B7-BF9D-345B92664A22}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{78D165B0-7FD2-46B7-BF9D-345B92664A22}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{78D165B0-7FD2-46B7-BF9D-345B92664A22}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{78D165B0-7FD2-46B7-BF9D-345B92664A22}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F0EB1480-143C-47F2-A615-5E3808B71C8A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F0EB1480-143C-47F2-A615-5E3808B71C8A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F0EB1480-143C-47F2-A615-5E3808B71C8A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F0EB1480-143C-47F2-A615-5E3808B71C8A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
