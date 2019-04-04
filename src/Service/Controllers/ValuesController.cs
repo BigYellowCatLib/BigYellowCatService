@@ -3,10 +3,12 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Authorization;
 
 namespace Service.Controllers
 {
     [Route("api/[controller]")]
+    [Authorize]
     public class ValuesController : Controller
     {
         // GET api/values
@@ -39,23 +41,6 @@ namespace Service.Controllers
         [HttpDelete("{id}")]
         public void Delete(int id)
         {
-        }
-        [HttpGet("{Login}")]
-        public void Login(Newtonsoft.Json.Linq.JObject obj)
-        {
-            try
-            {
-                string userName = "111";
-                string pwd = "11";
-                if (!string.IsNullOrWhiteSpace(userName) && !string.IsNullOrWhiteSpace(pwd))
-                {
-
-                }
-            }
-            catch (Exception)
-            {
-
-            }
         }
     }
 }
