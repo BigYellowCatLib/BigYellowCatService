@@ -1,0 +1,23 @@
+﻿
+@{
+    ViewData["Title"] = "Index";
+}
+<script src="~/js/oidc-client.js" type="text/javascript"></script>
+<script type="text/javascript">
+    var config = {
+        authority: "http://localhost:5000",
+        client_id: "js",
+        redirect_uri: "http://localhost:5001/callback.html",
+        response_type: "code",
+        scope: "openid profile",
+        post_logout_redirect_uri: "http://localhost:5001/js/index",
+    };
+
+    function init() {
+        var mgr = new Oidc.UserManager(config);
+        mgr.signinRedirect();
+    }
+
+</script>
+<button onclick="init()">初始化</button>
+<h2>Index</h2>

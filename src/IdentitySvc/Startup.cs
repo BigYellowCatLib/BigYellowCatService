@@ -10,6 +10,8 @@ using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Options;
 using Microsoft.EntityFrameworkCore;
 using IdentitySvc.Extensions;
+using IdentityServer4;
+using Microsoft.IdentityModel.Tokens;
 
 namespace IdentitySvc
 {
@@ -42,6 +44,8 @@ namespace IdentitySvc
                     .AddTestUsers(Config.GetTestUser());
             //.AddResourceOwnerValidator<ResourceOwnerPasswordValidator>();
 
+             
+
             Config.ServiceProvider = services.BuildServiceProvider();
         }
 
@@ -57,6 +61,7 @@ namespace IdentitySvc
             app.UseMvc();
             //MVC配置
             app.UseStaticFiles();
+
             app.UseMvcWithDefaultRoute();
         }
     }

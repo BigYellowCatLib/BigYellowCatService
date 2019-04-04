@@ -1,7 +1,15 @@
-﻿
+﻿@model IdentitySvc.ViewModel.LoginViewModel
 @{
     ViewData["Title"] = "Login";
 }
-
+<script src="~/lib/jquery/dist/jquery.js" type="text/javascript"></script>
 <h2>Login</h2>
-
+<form action="/Auth/Login" method="post">
+    <label asp-for="账号"></label>
+    <input class="form-control" placeholder="账号" name="username" value="@Model.Username" autofocus>
+    <label asp-for="密码"></label>
+    <input class="form-control" placeholder="密码" name="password" value="@Model.Password" autofocus>
+    <input type="hidden" name="returnUrl" value="@Model.ReturnUrl" />
+    <button type="submit" id="login"  >登录</button>
+</form>
+ 

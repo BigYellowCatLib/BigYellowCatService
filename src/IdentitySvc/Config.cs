@@ -74,6 +74,25 @@ namespace IdentitySvc
                     IdentityServerConstants.StandardScopes.OpenId,
                     IdentityServerConstants.StandardScopes.Profile,
                   }
+                },
+                new Client
+                {
+                   ClientId = "js",
+                    ClientName = "JavaScript Client",
+                    AllowedGrantTypes = GrantTypes.Code,
+                    RequirePkce = true,
+                    RequireClientSecret = false,
+
+                    RedirectUris =           { "http://localhost:5003/callback.html" },
+                    PostLogoutRedirectUris = { "http://localhost:5003/index.html" },
+                    AllowedCorsOrigins =     { "http://localhost:5003" },
+                    RequireConsent = false,
+                    AllowedScopes =
+                    {
+                        IdentityServerConstants.StandardScopes.OpenId,
+                        IdentityServerConstants.StandardScopes.Profile,
+                        "api"
+                    }
                 }
             };
         }
@@ -89,7 +108,7 @@ namespace IdentitySvc
                     Password = "zps",
                     Claims = new List<Claim>(){
                         new Claim("role","zps"),
-                        new Claim("aaa","asdasdsd")
+                        new Claim("aaa","asdasdsd"),
                     }
                 },
                  new TestUser(){

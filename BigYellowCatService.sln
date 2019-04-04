@@ -15,9 +15,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Business", "src\Business\Bu
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Contracts", "src\Contracts\Contracts.csproj", "{0FE01347-EDB4-4DB0-855A-7CD57ABFABCE}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IdentitySvc", "src\IdentitySvc\IdentitySvc.csproj", "{78D165B0-7FD2-46B7-BF9D-345B92664A22}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "IdentitySvc", "src\IdentitySvc\IdentitySvc.csproj", "{78D165B0-7FD2-46B7-BF9D-345B92664A22}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IdentityMvcClient", "src\IdentityMvcClient\IdentityMvcClient.csproj", "{F0EB1480-143C-47F2-A615-5E3808B71C8A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "IdentityMvcClient", "src\IdentityMvcClient\IdentityMvcClient.csproj", "{F0EB1480-143C-47F2-A615-5E3808B71C8A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JavaScriptClient", "JavaScriptClient\JavaScriptClient.csproj", "{A85130E5-8041-4206-9A15-7DD64D688A90}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -57,6 +59,10 @@ Global
 		{F0EB1480-143C-47F2-A615-5E3808B71C8A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F0EB1480-143C-47F2-A615-5E3808B71C8A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F0EB1480-143C-47F2-A615-5E3808B71C8A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A85130E5-8041-4206-9A15-7DD64D688A90}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A85130E5-8041-4206-9A15-7DD64D688A90}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A85130E5-8041-4206-9A15-7DD64D688A90}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A85130E5-8041-4206-9A15-7DD64D688A90}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
