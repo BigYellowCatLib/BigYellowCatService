@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 15
-VisualStudioVersion = 15.0.27004.2002
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.28803.202
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ApiGeteway", "src\ApiGeteway\ApiGeteway.csproj", "{BADC48AD-5E24-478A-89D1-6E5E304BAB1F}"
 EndProject
@@ -19,7 +19,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "IdentitySvc", "src\Identity
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "IdentityMvcClient", "src\IdentityMvcClient\IdentityMvcClient.csproj", "{F0EB1480-143C-47F2-A615-5E3808B71C8A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JavaScriptClient", "src\JavaScriptClient\JavaScriptClient.csproj", "{A85130E5-8041-4206-9A15-7DD64D688A90}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "JavaScriptClient", "src\JavaScriptClient\JavaScriptClient.csproj", "{A85130E5-8041-4206-9A15-7DD64D688A90}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AspNetCore", "AspNetCore\AspNetCore.csproj", "{F96E724E-284C-42C5-BB0F-C5F8ED528CDE}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -63,6 +65,10 @@ Global
 		{A85130E5-8041-4206-9A15-7DD64D688A90}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A85130E5-8041-4206-9A15-7DD64D688A90}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A85130E5-8041-4206-9A15-7DD64D688A90}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F96E724E-284C-42C5-BB0F-C5F8ED528CDE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F96E724E-284C-42C5-BB0F-C5F8ED528CDE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F96E724E-284C-42C5-BB0F-C5F8ED528CDE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F96E724E-284C-42C5-BB0F-C5F8ED528CDE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

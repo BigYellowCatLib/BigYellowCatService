@@ -9,6 +9,7 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Options;
 using Microsoft.AspNetCore.Http;
+using Core;
 
 namespace Service
 {
@@ -42,7 +43,7 @@ namespace Service
             {
                 app.UseDeveloperExceptionPage();
             }
-
+            app.RegisterConsul(Configuration);
             app.UseAuthentication();
             app.UseMvc();
            

@@ -11,6 +11,9 @@ namespace Service.Controllers
     [Authorize]
     public class ValuesController : Controller
     {
+
+        [HttpGet]
+        public IActionResult Index() => Ok("ok");
         // GET api/values
         [HttpGet]
         public IEnumerable<string> Get()
@@ -20,7 +23,7 @@ namespace Service.Controllers
 
         // GET api/values/5
         [HttpGet("{id}")]
-        public string Get(int id)
+        public string Get(int id) 
         {
             return "value";
         }
